@@ -1,6 +1,11 @@
 *.o
 *.out
+<<<<<<< Updated upstream
 *.log
 *.dSYM
 hexa_what
 decimal_to_hexadecimal
+=======
+*.exe
+*.log
+>>>>>>> Stashed changes
