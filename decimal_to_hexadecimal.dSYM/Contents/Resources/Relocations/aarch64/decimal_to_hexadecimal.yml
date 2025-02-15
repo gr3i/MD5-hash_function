@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     decimal_to_hexadecimal
-relocations:     []
-...
