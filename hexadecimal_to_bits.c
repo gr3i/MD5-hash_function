@@ -5,8 +5,6 @@
 char **hexadecimal_to_bits(const char* hex_string)
 {
 
-    printf("Hello\n");
-
     char *s = malloc(strlen(hex_string) + 1); // +1 for the NULL terminator aka \0 to end string
 
     if(s != NULL)
