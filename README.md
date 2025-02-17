@@ -15,6 +15,7 @@ Make bitwise functions:
 - bitwise XOR [DONE]
 - bitwise NOT [DONE]
 - bitwise ADD [DONE]  
+
 Make bit rotation function [DONE]
 
 Input of MD5 is 512 bits and the output is 128 bits. 
