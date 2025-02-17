@@ -84,7 +84,9 @@ Each of these values is obtained using the formula: K[i] = [2^32 x |sin(i + 1)|]
 (0 to 63), and the sine funcation is applied in radians.
 
 Next I have 64 constants that determine how much I will rotate the 32 bits by.  
-The array is called r.
+The array is called r.  
+
+combine = rotate((F(B, C, D, i) + A + input[currentIndex] + K[i]), r[i]) + B  
 
 
 The MD5 hash function is not finished yet.
