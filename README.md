@@ -27,7 +27,7 @@ The update works as follows:
 C' is equal to A  
 D' is equal to C  
 A' is equal to D  
-Most of the A update is simply permutation however B' is the combination of A, B, C, D and the 32 bit word from the input.  
+Most of the update is simply permutation however B' is the combination of A, B, C, D and the 32 bit word from the input.  
 If it's first iteration I will use the first 32 bit word from the input.  
 i = 0  
 i % 16 = 0  
