@@ -55,5 +55,20 @@ i = 48
 After 4 loops or 64 iterations, the current state becomes the output of the MD5 hash function.  
 The output of the MD5 hash function is the final values of A, B, C and D concatenated together after being updated 64 times.  
 
+What the combine function is doing:  
+The first part is to combine the inputs B, C, D into a single value via a function F.  
+Function F looks like this:  
+def F(B, C, D, i):  
+  if 0 <= i <= 15:  
+    return (B & C) | ((~B) & D)
+  if 16 <= i <= 31:  
+    return (D & B) | ((~D) & C)  
+  if 32 <= i <= 47:  
+    return B ^ C ^ D  
+  if 48 <= i <= 63:  
+    return C ^ (B | (~D))
+
+
+
 
 The MD5 hash function is not finished yet.
