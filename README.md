@@ -28,18 +28,32 @@ C' is equal to A
 D' is equal to C
 A' is equal to D
 Most of the A update is simply permutation however B' is the combination of A, B, C, D and the 32 bit word from the input.  
-If it's first iteration I will use the first 32 bit word from the input.  
+If it's first iteration I will use the first 32 bit word from the input.
+i = 0
+i % 16 = 0
 I will explain combine funtion below.  
 Next state will become after I set that A is equal to A', B is equal to B', C to C' and D to D'.  
 Three out of four of the values from the last state are permutated however B is a new value that is a function of the previous state 
 and the first 32 bits from the input.  
-I will run the program for 15 more iteration to digest the rest of the input.
+I will run the program for 15 more iterations to digest the rest of the input.
 This complete the first loop.  
 There will be total of four loops.  
 
 On the second loop. (That is iterations 16 through 31) I don't visit the input in sequential order, but in the order specified by (5i + 1) % 16 that visits
-each of the 32-bit segments in the input once but in the order shown in the animation. (Look in the video how exactly and write here, how...)
+each of the 32-bit segments in the input once but in the order shown in the animation. (Can see in the video)
+i = 16
+(5i + 1) % 16 = 
 
-On the third loop...
+On the third loop I visit the inputs in the order dictated by (3i + 5) % 16 
+i = 32
+(3i + 5) % 16 = 
+
+On the fourth loop I visit the inputs in the order defined by 7i % 16 
+i = 48
+7i % 16 =
+
+After 4 loops or 64 iterations, the current state becomes the output of the MD5 hash function.  
+The output of the MD5 hash function is the final values of A, B, C and D concatenated together after being updated 64 times.  
+
 
 The MD5 hash function is not finished yet.
