@@ -60,7 +60,7 @@ The first part is to combine the inputs B, C, D into a single value via a functi
 Function F looks like this:  
 def F(B, C, D, i):  
   if 0 <= i <= 15:  
-    return (B & C) | ((~B) & D)
+    return (B & C) | ((~B) & D)  
   if 16 <= i <= 31:  
     return (D & B) | ((~D) & C)  
   if 32 <= i <= 47:  
