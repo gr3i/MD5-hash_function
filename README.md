@@ -28,9 +28,9 @@ C' is equal to A
 D' is equal to C
 A' is equal to D
 Most of the A update is simply permutation however B' is the combination of A, B, C, D and the 32 bit word from the input.  
-If it's first iteration I will use the first 32 bit word from the input.
-i = 0
-i % 16 = 0
+If it's first iteration I will use the first 32 bit word from the input.  
+i = 0  
+i % 16 = 0  
 I will explain combine funtion below.  
 Next state will become after I set that A is equal to A', B is equal to B', C to C' and D to D'.  
 Three out of four of the values from the last state are permutated however B is a new value that is a function of the previous state 
