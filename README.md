@@ -40,9 +40,9 @@ This complete the first loop.
 There will be total of four loops.  
 
 On the second loop. (That is iterations 16 through 31) I don't visit the input in sequential order, but in the order specified by (5i + 1) % 16 that visits
-each of the 32-bit segments in the input once but in the order shown in the animation. (Can see in the video)
-i = 16
-(5i + 1) % 16 = 
+each of the 32-bit segments in the input once but in the order shown in the animation. (Can see in the video)  
+i = 16  
+(5i + 1) % 16 =  
 
 On the third loop I visit the inputs in the order dictated by (3i + 5) % 16 
 i = 32  
@@ -50,7 +50,7 @@ i = 32
 
 On the fourth loop I visit the inputs in the order defined by 7i % 16 
 i = 48  
-7i % 16 =
+7i % 16 =  
 
 After 4 loops or 64 iterations, the current state becomes the output of the MD5 hash function.  
 The output of the MD5 hash function is the final values of A, B, C and D concatenated together after being updated 64 times.  
