@@ -44,11 +44,11 @@ each of the 32-bit segments in the input once but in the order shown in the anim
 i = 16  
 (5i + 1) % 16 =  
 
-On the third loop I visit the inputs in the order dictated by (3i + 5) % 16 
+On the third loop I visit the inputs in the order dictated by (3i + 5) % 16  
 i = 32  
 (3i + 5) % 16 = 
 
-On the fourth loop I visit the inputs in the order defined by 7i % 16 
+On the fourth loop I visit the inputs in the order defined by 7i % 16   
 i = 48  
 7i % 16 =  
 
