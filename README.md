@@ -76,6 +76,15 @@ i % 16 if 0 <= i < 16
 (3i + 5) % 16 if 32 <= i < 48  
 7i % 16 if 48 <= i < 64  
 
+What happens in the red box. The red box contains two addition and one rotation.  
+MD5 introduces 64 hard-coded constants in an array called K. I will use same array in my MD5 hash function code. These are used for the first addition.  The value from K that I use depends on the current iteration i. (There are 64 iterations and the array K has 64 values) 
+
+Just for fact... How are these constants generated?  
+Each of these values is obtained using the formula: K[i] = [2^32 x |sin(i + 1)|] where i is the index
+(0 to 63), and the sine funcation is applied in radians.
+
+Next I have 64 constants that determine how much I will rotate the 32 bits by.  
+The array is called r.
 
 
 The MD5 hash function is not finished yet.
