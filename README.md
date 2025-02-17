@@ -8,7 +8,7 @@ There will be many small projects around, so I will atleast learn here, how to c
 Progress:
 
 Make function to convert decimal to hexadecimal [DONE]  
-Make function to convert hexadecimal to bits [DONE]
+Make function to convert hexadecimal to bits [DONE]  
 Make bitwise functions:
 - bitwise OR [DONE]
 - bitwise AND [DONE]
