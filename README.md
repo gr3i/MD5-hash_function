@@ -66,8 +66,15 @@ def F(B, C, D, i):
   if 32 <= i <= 47:  
     return B ^ C ^ D  
   if 48 <= i <= 63:  
-    return C ^ (B | (~D))
+    return C ^ (B | (~D))  
 
+Combine function  
+redBox(F(B, C, D, i) + A + input[currentIndex])  
+currentIndex(i) =   
+i % 16 if 0 <= i < 16  
+(5i + 1) % 16 if 16 <= i < 32  
+(3i + 5) % 16 if 32 <= i < 48  
+7i % 16 if 48 <= i < 64  
 
 
 
