@@ -45,11 +45,11 @@ i = 16
 (5i + 1) % 16 = 
 
 On the third loop I visit the inputs in the order dictated by (3i + 5) % 16 
-i = 32
+i = 32  
 (3i + 5) % 16 = 
 
 On the fourth loop I visit the inputs in the order defined by 7i % 16 
-i = 48
+i = 48  
 7i % 16 =
 
 After 4 loops or 64 iterations, the current state becomes the output of the MD5 hash function.  
