@@ -24,7 +24,7 @@ Each of the words will have the variable name (A, B, C, D) -> e.g. A = 0xefcdba7
 I will have current state (A, B, C, D) and the next state (A', B', C', D')  
 On each iteration I will calculate next state of A', B', C' and D' and set the current state to be next state.  
 The update works as follows:    
-C' is equal to A  
+C' is equal to B  
 D' is equal to C  
 A' is equal to D  
 Most of the update is simply permutation however B' is the combination of A, B, C, D and the 32 bit word from the input.  
