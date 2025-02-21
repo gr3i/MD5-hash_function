@@ -90,3 +90,5 @@ combine = rotate((F(B, C, D, i) + A + input[currentIndex] + K[i]), r[i]) + B
 
 
 The MD5 hash function is not finished yet.
+
+Task to do: Function F
